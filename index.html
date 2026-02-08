@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine's Day Surprise</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <div class="hearts-container" id="hearts-container"></div>
+
+        <div class="envelope" id="main-envelope">
+            <div class="letter">
+                <i class="fas fa-heart"></i>
+                <p>To Misssyy</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Page -->
+    <div id="question-page" class="page hidden">
+        <div class="card">
+            <h1 class="question-text">Will you be my Valentine?</h1>
+
+            <div class="question-image-wrapper">
+                <img src="justin.jpg" alt="Justin Beiber" class="question-image">
+                <span class="mini-heart"></span>
+                <span class="mini-heart"></span>
+                <span class="mini-heart"></span>
+            </div>
+
+            <div class="buttons-container">
+                <button id="yes-btn" class="valentine-btn">YES!</button>
+                <button id="no-btn" class="valentine-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acceptance Page -->
+    <div id="acceptance-page" class="page hidden">
+        <div class="card acceptance-card">
+            <h1 class="page-title">My Love Grows for You</h1>
+
+            <div class="envelopes-inside">
+                <div class="tree-envelope" data-content="message1">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="tree-envelope" data-content="photo">
+                    <i class="fas fa-image"></i>
+                </div>
+
+                <div class="tree-envelope" data-content="message2">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Envelope Content Modals -->
+    <div id="message1-content" class="envelope-content hidden">
+        <div class="content-box">
+            <div class="content-bg"></div>
+
+            <div class="content-scroll">
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h2 class="content-title">My Dearest Love</h2>
+
+                <div class="message-content">
+                    Every moment with you feels like a beautiful dream I never want to wake up from.
+                    Your smile brightens my darkest days, and your love fills my heart with joy beyond measure.
+                    I cherish every laugh, every conversation, and every second we spend together.
+                    <br><br>
+                    On this Valentine's Day, I want to promise you that my love for you will only grow stronger
+                    with each passing day. You are my everything.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="photo-content" class="envelope-content hidden">
+        <div class="content-box">
+            <div class="content-scroll">
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h2 class="content-title">Our Future Together</h2>
+
+                <div class="message-content">
+                    While I don't have an actual photo of us here, in my heart I carry millions of memories with you.
+                    Every shared glance, every warm embrace, every adventure we've had together is a picture-perfect
+                    moment that I'll treasure forever.
+                </div>
+
+                <div class="photo-placeholder">
+                    <img src="misssy.jpeg" alt="Our photo">
+                </div>
+
+                <p class="photo-caption">
+                    Imagine this is a beautiful photo of us together
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="message2-content" class="envelope-content hidden">
+        <div class="content-box">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Scroll container -->
+            <div class="content-scroll">
+                <h2 class="content-title">My Promise to You</h2>
+
+                <div class="message-content">
+                    I promise to always be there for you, through sunshine and rain.
+                    I promise to listen, to understand, and to support you in all your dreams.
+                    I promise to love you more with each passing day, and to never take your love for granted.
+                    <br><br>
+                    You are the most wonderful person I've ever known, and I'm so grateful to have you in my life.
+                    Happy Valentine's Day, my love.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="global-footer-text">
+        This is meant for you
+    </div>
+
+</body>
+</html>
